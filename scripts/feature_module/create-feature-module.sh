@@ -15,8 +15,7 @@ MODULE_NAME=$1
 
 echo
 echo "Start create package module structure"
-cd ..
-cd ..
+cd $PROJECT_ROOT_PATH
 flutter create --template=package $MODULE_NAME
 echo "End generate package module structure"
 
@@ -29,10 +28,9 @@ rm README.md
 rm pubspec.yaml
 rm lib/*
 rm test/*
-cd ..
 echo "End remove not needec files"
 
-cd scripts/feature_module
+cd $SCRIPTS_PATH/feature_module
 
 echo
 echo "Start create pubspec file"

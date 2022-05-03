@@ -16,8 +16,7 @@ MODULE_NAME=core_ui
 
 echo
 echo "Start create package module structure"
-cd ..
-cd ..
+cd $PROJECT_ROOT_PATH
 flutter create --template=package $MODULE_NAME
 echo "End generate package module structure"
 
@@ -29,10 +28,9 @@ rm LICENSE
 rm README.md
 rm lib/*
 rm test/*
-cd ..
 echo "End remove not needec files"
 
-cd scripts/core_ui_module
+cd $SCRIPTS_PATH/core_ui_module
 
 echo
 echo "Start create colors file"

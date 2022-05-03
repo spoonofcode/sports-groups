@@ -12,12 +12,12 @@ printf "Start create future module \n"
 
 
 # define parameters which are passed in.
-MODULE_NAME=core
+MODULE_NAME=routes
 
 echo
 echo "Start create package module structure"
 cd $PROJECT_ROOT_PATH
-flutter create --template=package $MODULE_NAME
+flutter create --template=package $routes
 echo "End generate package module structure"
 
 echo
@@ -26,13 +26,12 @@ cd $MODULE_NAME
 rm CHANGELOG.md
 rm LICENSE
 rm README.md
-rm pubspec.yaml
+#rm pubspec.yaml
 rm lib/*
 rm test/*
-echo "End remove not needed files"
+echo "End remove not needec files"
 
-
-cd $SCRIPTS_PATH/core_module
+cd $SCRIPTS_PATH/routes
 
 echo
 echo "Start create pubspec file"
@@ -40,23 +39,13 @@ echo "Start create pubspec file"
 echo "End create pubspec file"
 
 echo
-echo "Start create credentials holder file"
+echo "Start create app pages file"
 ./create-credentials-holder-file.sh $MODULE_NAME > ../../$MODULE_NAME/lib/credentials_holder.dart
-echo "End create credentials holder file"
+echo "End create app pages file"
 
 echo
-echo "Start create get storage keys file"
-./create-get-storage-keys-file.sh $MODULE_NAME > ../../$MODULE_NAME/lib/get_storage_keys.dart
-echo "End create get storage keys file"
-
-echo
-echo "Start create global binding file"
-./create-global-binding-file.sh $MODULE_NAME > ../../$MODULE_NAME/lib/global_binding.dart
-echo "End create global binding file"
-
-echo
-echo "Start create secure storage manager file"
-./create-secure-storage-manager-file.sh $MODULE_NAME > ../../$MODULE_NAME/lib/secure_storage_manager.dart
-echo "End create secure storage manager file"
+echo "Start create app routes file"
+./create-credentials-holder-file.sh $MODULE_NAME > ../../$MODULE_NAME/lib/credentials_holder.dart
+echo "End create app routes file"
 
 echo "End generate module structure"

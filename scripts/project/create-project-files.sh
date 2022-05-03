@@ -15,13 +15,15 @@ printf "Start create future module \n"
 MODULE_NAME=core
 
 echo
-echo "Start create package module structure"
-cd $PROJECT_ROOT_PATH
-flutter create --template=package $MODULE_NAME
-echo "End generate package module structure"
+echo "Start create project main files"
+cd ..
+cd ..
+cd lib
+
+echo "End create project main files"
 
 echo
-echo "Start remove not needed files"
+echo "Start remove not needec files"
 cd $MODULE_NAME
 rm CHANGELOG.md
 rm LICENSE
@@ -29,10 +31,11 @@ rm README.md
 rm pubspec.yaml
 rm lib/*
 rm test/*
-echo "End remove not needed files"
+cd ..
+echo "End remove not needec files"
 
 
-cd $SCRIPTS_PATH/core_module
+cd scripts/core_module
 
 echo
 echo "Start create pubspec file"
