@@ -11,7 +11,7 @@ class GlobalBinding extends Bindings {
   @override
   void dependencies() {
     Get.put<CredentialsHolder>(CredentialsHolder(), permanent: true);
-    Get.put<UserRepository>(UserRepository(), permanent: true);
+#    Get.put<UserRepository>(UserRepository(), permanent: true);
     Get.put<GetStorage>(GetStorage(), permanent: true);
   }
 }

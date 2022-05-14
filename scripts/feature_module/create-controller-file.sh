@@ -16,11 +16,11 @@ class ${NAME_UPPER_CAMEL_CASE}Controller extends GetxController {
 
   ${NAME_UPPER_CAMEL_CASE}Controller({required this.${NAME_CAMEL_CASE}UseCase});
 
-  final RxString userName = ''.obs;
+  final RxString exampleText = ''.obs;
 
   @override
   void onInit() {
-    userName.value = ${NAME_CAMEL_CASE}UseCase.getUserName();
+    exampleText.value = ${NAME_CAMEL_CASE}UseCase.getExampleText();
     super.onInit();
   }
 }

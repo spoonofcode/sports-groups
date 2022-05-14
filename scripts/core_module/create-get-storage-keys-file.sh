@@ -3,6 +3,6 @@
 # define the template.
 cat  << EOF
 class GetStorageKeys {
-  static const String userName = 'Example user name';
+  static const String exampleText = 'Example text';
 }
 EOF

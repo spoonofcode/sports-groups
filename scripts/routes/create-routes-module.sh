@@ -26,7 +26,7 @@ cd $MODULE_NAME
 rm CHANGELOG.md
 rm LICENSE
 rm README.md
-#rm pubspec.yaml
+rm pubspec.yaml
 rm lib/*
 rm test/*
 echo "End remove not needec files"
@@ -40,12 +40,12 @@ echo "End create pubspec file"
 
 echo
 echo "Start create app pages file"
-./create-credentials-holder-file.sh $MODULE_NAME > ../../$MODULE_NAME/lib/credentials_holder.dart
+./create-app-pages-file.sh $MODULE_NAME > ../../$MODULE_NAME/lib/app_pages.dart
 echo "End create app pages file"
 
 echo
 echo "Start create app routes file"
-./create-credentials-holder-file.sh $MODULE_NAME > ../../$MODULE_NAME/lib/credentials_holder.dart
+./create-app-routes-file.sh $MODULE_NAME > ../../$MODULE_NAME/lib/app_routes.dart
 echo "End create app routes file"
 
 echo "End generate module structure"

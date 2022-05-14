@@ -40,7 +40,7 @@ class ${NAME_UPPER_CAMEL_CASE}View extends GetView<${NAME_UPPER_CAMEL_CASE}Contr
                   textAlign: TextAlign.center,
                 ),
                 Text(
-                  controller.userName.value,
+                  controller.exampleText.value,
                   style: const TextStyle(
                       fontWeight: FontWeight.normal,
                       fontSize: Dimens.textSizeLarge,

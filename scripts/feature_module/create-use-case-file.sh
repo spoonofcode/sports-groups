@@ -17,6 +17,6 @@ class ${NAME_UPPER_CAMEL_CASE}UseCase {
     required this.getStorage,
   });
 
-  String getUserName() => getStorage.read<String>(GetStorageKeys.userName)!;
+  String getExampleText() => getStorage.read<String>(GetStorageKeys.exampleText)!;
 }
 EOF
