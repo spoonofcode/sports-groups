@@ -17,7 +17,7 @@ MODULE_NAME=routes
 echo
 echo "Start create package module structure"
 cd $PROJECT_ROOT_PATH
-flutter create --template=package $routes
+flutter create --template=package $MODULE_NAME
 echo "End generate package module structure"
 
 echo
@@ -37,11 +37,6 @@ echo
 echo "Start create pubspec file"
 ./create-pubspec-file.sh $MODULE_NAME > ../../$MODULE_NAME/pubspec.yaml
 echo "End create pubspec file"
-
-echo
-echo "Start create app pages file"
-./create-app-pages-file.sh $MODULE_NAME > ../../$MODULE_NAME/lib/app_pages.dart
-echo "End create app pages file"
 
 echo
 echo "Start create app routes file"

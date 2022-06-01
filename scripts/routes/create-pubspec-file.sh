@@ -35,10 +35,6 @@ dependencies:
     sdk: flutter
   get: ^4.6.1
 
-  # Modules
-  core:
-    path: core
-
 dev_dependencies:
   flutter_test:
     sdk: flutter
