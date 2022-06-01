@@ -13,14 +13,13 @@ import 'package:notifications/notifications_binding.dart';
 import 'package:notifications/notifications_view.dart';
 import 'package:profile/profile_binding.dart';
 import 'package:profile/profile_view.dart';
+import 'package:routes/app_routes.dart';
 import 'package:schedule/schedule_binding.dart';
 import 'package:schedule/schedule_view.dart';
 import 'package:search/search_binding.dart';
 import 'package:search/search_view.dart';
-import 'package:sports_groups/routes/app_routes.dart';
-
-import 'main/main_binding.dart';
-import 'main/main_view.dart';
+import 'package:sports_groups/main/main_binding.dart';
+import 'package:sports_groups/main/main_view.dart';
 
 abstract class AppPages {
   static final routes = [
